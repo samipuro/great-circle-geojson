@@ -1,0 +1,47 @@
+{
+	"name": "great-circle-geojson",
+	"version": "1.0.0",
+	"description": "Range circles and great-circle routes as GeoJSON that render correctly across the antimeridian and over the poles.",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./src/index.d.ts",
+			"default": "./src/index.js"
+		}
+	},
+	"main": "./src/index.js",
+	"types": "./src/index.d.ts",
+	"files": [
+		"src"
+	],
+	"sideEffects": false,
+	"scripts": {
+		"test": "node --test test/index.test.js"
+	},
+	"keywords": [
+		"great-circle",
+		"geodesic",
+		"geojson",
+		"antimeridian",
+		"dateline",
+		"pole",
+		"range-ring",
+		"circle",
+		"maplibre",
+		"leaflet",
+		"aviation"
+	],
+	"author": "Sami Puro <sami@aviadesign.fi>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/samipuro/great-circle-geojson.git"
+	},
+	"homepage": "https://github.com/samipuro/great-circle-geojson#readme",
+	"bugs": {
+		"url": "https://github.com/samipuro/great-circle-geojson/issues"
+	},
+	"engines": {
+		"node": ">=20"
+	}
+}

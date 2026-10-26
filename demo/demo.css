@@ -1,0 +1,75 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	font: 14px/1.4 system-ui, sans-serif;
+}
+
+.maps {
+	display: flex;
+	height: 100%;
+}
+
+.side {
+	position: relative;
+	flex: 1;
+	border-left: 2px solid #fff;
+}
+
+.map {
+	height: 100%;
+}
+
+.title {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 4px 10px;
+	color: #fff;
+	font-weight: 600;
+	border-radius: 6px;
+	white-space: nowrap;
+}
+
+.title.turf {
+	background: #d1242f;
+}
+
+.title.ours {
+	background: #1f6feb;
+}
+
+.panel {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 520px;
+	max-width: calc(100% - 40px);
+	padding: 10px 14px;
+	background: rgba(255, 255, 255, 0.94);
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.panel p {
+	margin: 0 0 6px;
+}
+
+.panel label {
+	display: block;
+	margin: 6px 0;
+}
+
+.panel input[type="range"] {
+	width: 100%;
+}
+
+.presets {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}

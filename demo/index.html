@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>great-circle-geojson demo</title>
+	<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.css">
+	<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+	<div class="maps">
+		<div class="side">
+			<div id="mapTurf" class="map"></div>
+			<div class="title turf">@turf/circle + @turf/great-circle 7.4</div>
+		</div>
+		<div class="side">
+			<div id="mapOurs" class="map"></div>
+			<div class="title ours">great-circle-geojson</div>
+		</div>
+	</div>
+	<div class="panel">
+		<p>Click a map to move the center. Shift-click sets a great-circle destination.</p>
+		<label>Radius <output id="radiusValue"></output>
+			<input id="radius" type="range" min="100" max="19500" step="100" value="8000">
+		</label>
+		<div class="presets">
+			<button type="button" data-center="24.96,60.32" data-radius="8000" data-view="20,30,0.2">8,000 km from Helsinki</button>
+			<button type="button" data-center="10,82" data-radius="1500" data-view="10,55,0.6">Over the North Pole</button>
+			<button type="button" data-center="178,-15" data-radius="2500" data-to="-122.38,37.62" data-view="-160,10,0.6">Across the date line</button>
+			<button type="button" data-center="24.96,60.32" data-radius="18000" data-view="0,10,0">Over both poles</button>
+		</div>
+	</div>
+	<script src="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.js"></script>
+	<script type="module" src="demo.js"></script>
+</body>
+</html>
